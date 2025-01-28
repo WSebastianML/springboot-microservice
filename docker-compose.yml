@@ -1,8 +1,6 @@
 services:
   app:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: wsebastianml/webmicroservicios-app
     container_name: spring-microservice
     ports:
       - "8081:8080"
