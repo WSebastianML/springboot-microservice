@@ -37,8 +37,8 @@ El proyecto utiliza las siguientes variables de entorno para configurar la conex
 
 1. **Clona este repositorio** en tu máquina local:
    ```bash
-   git clone https://github.com/tu_usuario/tu_repositorio.git
-   cd tu_repositorio
+   git clone https://github.com/WSebastianML/springboot-microservice.git
+   cd springboot-microservice
    ```
    
 2. **Construye y levanta** los servicios con Docker Composer:
@@ -107,6 +107,23 @@ Si prefieres usar las imágenes ya publicadas en Docker Hub, puedes hacerlo sin 
     ```bash
     docker-compose up -d
     ```
+
+## Prueba de funcionalidad
+
+Una vez creado el contenedor, se puede probar la funcionalidad de la aplicación con las siguientes APIS:
+
+- GET
+   - /api/songs: lista todas las canciones en la base de datos
+   - /api/songs/{id}: obtiene una cancion mediante el id
+
+- POST
+   - /api/songs: crea una canción al pasarle todos sus parámetros
+ 
+- PUT
+   - /api/songs/{id}: actualiza una canción según los parámetros enviados
+
+- DELETE
+   - /api/songs/{id}: borra una canción con un id específico
 
    
    
